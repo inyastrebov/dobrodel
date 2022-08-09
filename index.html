@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <title>Добродел</title>
+    </head>
+    <body>
+        <svg display="none">
+            <!-- help block -->
+            <symbol id="left" viewBox="0 0 21 9">
+                <g>
+                    <path d="M0 7.50598L5.23584 0.607723L8.59199 8.59122L0 7.50598ZM18.7882 7.74221C18.3665 6.47142 17.8441 5.57122 17.2253 4.95492C16.617 4.34921 15.8797 3.98154 14.9525 3.82991C13.0341 3.51616 10.3309 4.12703 6.49006 5.59077L5.95588 4.18911C9.7935 2.72659 12.839 1.96431 15.1946 2.34957C16.4045 2.54744 17.4354 3.04731 18.2837 3.89205C19.1214 4.72621 19.7438 5.85938 20.2118 7.26976L18.7882 7.74221Z"/>
+                </g>
+            </symbol>
+            <symbol id="right" viewBox="0 0 21 9">
+                <g>
+                    <path d="M20.5 7.50598L15.2642 0.607723L11.908 8.59122L20.5 7.50598ZM1.71183 7.74221C2.13355 6.47142 2.65585 5.57122 3.27472 4.95492C3.88297 4.34921 4.62034 3.98154 5.54749 3.82991C7.46586 3.51616 10.1691 4.12703 14.0099 5.59077L14.5441 4.18911C10.7065 2.72659 7.66104 1.96431 5.30538 2.34957C4.09552 2.54744 3.06456 3.04731 2.21628 3.89205C1.37863 4.72621 0.756221 5.85938 0.288173 7.26976L1.71183 7.74221Z"/>
+                </g>
+            </symbol>
+        </svg>
+
+        <a href="#top" class="scroll-top"></a>
+
+        <div class="modal-section">
+            <div class="modal-section__registration registration">
+                <div class="registration__popup">
+                    <div class="registration__close"></div>
+                    <h3 class="title-h3 registration__title">Регистрация</h3>
+                    <p class="registration__descr">Мы предлагаем вам зарегестрироваться уже сейчас, чтобы первыми получить доступ к созданию ваших проектов</p>
+                    <form class="registration__form form">
+                        <input class="form__input form__input-num form__margin" type="tel" placeholder="+7">
+                        <!-- <div class="form__line-block form__margin">
+                            <div class="form__select-wrapper">
+                                <select class="form__select">
+                                    <option value="male" selected>Мужской</option>
+                                    <option value="famale">Женский</option>
+                                </select>
+                            </div>
+                            <div class="form__town">
+                                <input class="form__input" type="text" placeholder="Ваш город">
+                            </div>
+                        </div>
+                        <input class="form__input form__margin" type="email" placeholder="Почта">
+                        <div class="form__radio-box">
+                            <label>
+                                <input class="form__radio" type="radio" name="profile" checked>
+                                <span class="form__custom-radio"></span>
+                                Амбасадор
+                            </label>
+                            <label>
+                                <input class="form__radio" type="radio" name="profile">
+                                <span class="form__custom-radio"></span>
+                                Деятель/компания
+                            </label>
+                            <label>
+                                <input class="form__radio" type="radio" name="profile">
+                                <span class="form__custom-radio"></span>
+                                НКО
+                            </label>
+                        </div> -->
+                        <button class="btn btn__popup">Получить код</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <header class="header" id="top">
+            <div class="header__container">
+                <div class="header__wrapper">
+                    <a href="index.html" class="header__logo"><img src="img/Logo.svg" alt="logo"></a>
+                    <nav class="nav header__nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#opp" class="nav__link">Возможности</a></li>
+                            <li class="nav__item"><a href="#adn" class="nav__link">Преимущества</a></li>
+                            <li class="nav__item"><a href="#stc" class="nav__link">Доброруб</a></li>
+                            <li class="nav__item"><a href="#stg" class="nav__link">3 этапа</a></li>
+                            <li class="nav__item"><a href="#tbs" class="nav__link">Кому подходит?</a></li>
+                            <li class="nav__item"><a href="#opj" class="nav__link">Почему мы?</a></li>
+                            <li class="nav__item"><a href="#tm" class="nav__link">Команда</a></li>
+                            <li class="nav__item"><a href="#cts" class="nav__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <button class="btn btn__none" name="btn">Войти</button>
+                    <div class="hamb" id="hamb">
+                        <div class="humb__field" id="hamb">
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-menu">
+                    <div class="burger-menu__logo">
+                        <img src="img/Logo-light.svg" alt="Logo">
+                    </div>
+                    <div class="burger-menu__close"></div>
+                    <ul class="burger-menu__list">
+                        <li class="burger-menu__item"><a href="#opp" class="burger-menu__link">Возможности</a></li>
+                        <li class="burger-menu__item"><a href="#adn" class="burger-menu__link">Преимущества</a></li>
+                        <li class="burger-menu__item"><a href="#stc" class="burger-menu__link">Доброруб</a></li>
+                        <li class="burger-menu__item"><a href="#stg" class="burger-menu__link">3 этапа</a></li>
+                        <li class="burger-menu__item"><a href="#tbs" class="burger-menu__link">Кому подходит?</a></li>
+                        <li class="burger-menu__item"><a href="#opj" class="burger-menu__link">Почему мы?</a></li>
+                        <li class="burger-menu__item"><a href="#tm" class="burger-menu__link">Команда</a></li>
+                        <li class="burger-menu__item"><a href="#cts" class="burger-menu__link">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section class="banner">
+            <div class="banner__container">
+                <div class="banner__content">
+                    <p class="banner__caption">добродел</p>
+                    <p class="banner__title">IT - РЕШЕНИЕ</p>
+                    <h2 class="title">где на одной платформе объединены</h2>
+                    <p class="title banner__item">краудфандинг</p>
+                    <p class="title banner__item">фандрайзинг</p>
+                    <p class="title banner__item">социальная сеть</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="help" id="opp">
+            <div class="help__container">
+                <div class="help__title-block title-block">
+                    <h2 class="title">кому помогать</h2>
+                    <p class="caption-decor">Ты решаешь сам</p>
+                </div>
+                <div class="help__slider">
+                    <div class="swiper help__items">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="help-item">
+                                    <h3 class="help-item__title title-h3">Доверие</h3>
+                                    <p class="help-item__descr">дает возможность развиваться, привлечь внимание, получать
+                                        и&nbsp;делиться компетенциями</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="help-item">
+                                    <h3 class="help-item__title title-h3">Помощь</h3>
+                                    <p class="help-item__descr">возможность отдавать
+                                        и&nbsp;попросить о&nbsp;поддержке</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="help-item">
+                                    <h3 class="help-item__title title-h3">Надёжность</h3>
+                                    <p class="help-item__descr">проверенные благотворительные проекты гарант доведения денежных средств до&nbsp;конкретных получателей</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="help-item">
+                                    <h3 class="help-item__title title-h3">Общение</h3>
+                                    <p class="help-item__descr">найти друзей и&nbsp;единомышленников,
+                                        создать комьюнити (сообщество)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-nav help__slider-nav">
+                        <button class="slider-nav__btn help__prev slider-btn">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#left"></use>
+                            </svg>
+                        </button>
+                        <button class="slider-nav__btn help__next slider-btn">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="help__action action">
+                    <h3 class="title-h3 title-h3--light">Нам нужны такие как ты!</h3>
+                    <button class="btn" name="btn">Присоединиться</button>
+                </div>
+                <div class="help__charity charity">
+                    <div class="charity__item">
+                        <div class="charity__title-img charity__croud">
+                            <p class="charity__title">краудфандинг</p>
+                        </div>
+                        <p class="charity__descr">люди решают помогать&nbsp;ли тебе рублем. Хочешь баян или
+                            собрать деньги на&nbsp;стартап, <span>проявляй активность,</span> посты, видео,
+                            привлекай внимание к&nbsp;проекту. А&nbsp;если этого мало используй
+                            рекламный кабинет для продвижения.</p>
+                    </div>
+                    <div class="charity__item">
+                        <div class="charity__title-img charity__fund">
+                            <p class="charity__title">фандрайзинг</p>
+                        </div>
+                        <p class="charity__descr">благотворительный проект, модерируется благотворительным
+                            фондом. Фонд предоставляет прозрачную отчетность и&nbsp;проходит
+                            ежегодный аудит. <span>Проект продвигается нами бесплатно,</span> если
+                            у&nbsp;тебя болеет ребенок, мы&nbsp;сделаем так, чтобы твой проект
+                            заметили. И&nbsp;когда ты&nbsp;создаешь проект, его продвижение тебе
+                            не&nbsp;будет ничего стоить.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages" id="adn">
+            <div class="advantages__container">
+                <div class="advantages__title-block title-block">
+                    <h2 class="title">Преимущества</h2>
+                    <p class="caption-decor">Для твоего проекта</p>
+                </div>
+                <div class="swiper advantages__items">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide advantages__slide">
+                            <img src="img/web.svg" alt="web">
+                            <p class="advantages__descr">социальная сеть где
+                                каждый день один
+                                из&nbsp;нас
+                                становится богаче и&nbsp;сам
+                                решает
+                                кому помочь.
+                                С&nbsp;функционалом самых
+                                известных аналогов
+                            </p>
+                        </div>
+                        <div class="swiper-slide advantages__slide">
+                            <img src="img/dobr.svg" alt="web">
+                            <p class="advantages__descr">доброруб&nbsp;&mdash; социальная
+                                лотерея
+                                для привлечения
+                                аудитории.
+                            </p>
+                        </div>
+                        <div class="swiper-slide advantages__slide">
+                            <img src="img/human.svg" alt="web">
+                            <p class="advantages__descr">амбассадор привлекает
+                                внимание как
+                                к&nbsp;крупному
+                                проекту, так и&nbsp;отдельному
+                                человеку.
+                            </p>
+                        </div>
+                        <div class="swiper-slide advantages__slide">
+                            <img src="img/heart.svg" alt="web">
+                            <p class="advantages__descr">деятель может поделиться
+                                своими компетенциями
+                                и&nbsp;оказать поддержку
+                                нуждающимся.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="advantages__info">
+                    <div class="advantages__card">
+                        <img class="advantages__icon" src="img/game.svg" alt="game">
+                        <h3 class="title-h3 advantages__title-h3">Геймификация</h3>
+                        <p class="advantages__subtitle">геймификация будет представлена в&nbsp;виде:</p>
+                        <ul class="advantages__list">
+                            <li class="advantages__item">3D&nbsp;аватар: Герой, Хранитель, Искатель.
+                                Облик уникального аватара напрямую зависит от&nbsp;того в&nbsp;каких проектах пользователь принимает участие.</li>
+                            <li class="advantages__item">NFT 
+                                за&nbsp;участие в&nbsp;проекте, виртуальные аксессуары за&nbsp;участие в&nbsp;offline мероприятиях.</li>
+                            <li class="advantages__item">прямая связь offline мероприятий с&nbsp;online жизнью пользователя.</li>
+                            <li class="advantages__item">нестандартный подход к&nbsp;нативной рекламе
+                                и&nbsp;спонсорским интеграциям.</li>
+                        </ul>
+                    </div>
+                    <img class="advantages__img" src="img/phone.png" alt="phone">
+                    <div class="advantages__card">
+                        <img class="advantages__icon" src="img/chart.svg" alt="game">
+                        <h3 class="title-h3 advantages__title-h3">Продвижение</h3>
+                        <ul class="advantages__list">
+                            <li class="advantages__item">наличие рекламного кабинета со&nbsp;статистикой.</li>
+                            <li class="advantages__item">возможность создания коммерческого проекта с
+                                целью получения финансирования от
+                                пользователей и возможностью продвижения:
+                                формат - город, район, длительность и тд,
+                                целевая аудитория - пол, возраст,
+                                бюджет - количество показов,
+                                корректировка - на основе статистики.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="title advantages__signa">Социальная сеть, объединившая в себе нужный функционал для успеха твоего проекта.</div>
+                <div class="help__action action">
+                    <h3 class="title-h3 title-h3--light">Нам нужны такие как ты!</h3>
+                    <button class="btn" name="btn">Присоединиться</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="stock" id="stc">
+            <div class="stock__container">
+                <div class="stock__left-block">
+                    <div class="stock__img">
+                        <img src="img/dobrorub.png" alt="Доброруб">
+                    </div>
+                    <div class="stock__social">
+                        <p class="stock__descr-title">Ежедневная социальная программа</p>
+                        <p class="stock__descr">только для зарегистрированных пользователей. С&nbsp;помощью
+                            генератора случайных
+                            чисел ежедневно из&nbsp;числа онлайн участников
+                            будет выбираться один победитель.</p>
+                    </div>
+                    <div class="stock__caption-block caption-block--block">
+                        <p class="stock__caption"><span>Доля выигрыша:</span><br>
+                            Амбассадор 100% на&nbsp;благотворительность.
+                            Деятель&nbsp;/ компания не&nbsp;менее 25%. Пользователь
+                            сам решает.
+                        </p>
+                        <p class="stock__caption">*Пример Китая, где муниципалитет Шэньчжэня и
+                            китайские банки подготовили к&nbsp;раздаче 4,5 млн
+                            цифровых юаней с&nbsp;целью поддержания экономики
+                            после локдауна.</p>
+                    </div>
+                </div>
+                <div class="stock__right-block">
+                    <ul class="stock__list">
+                        <li class="stock__item">
+                            <h1 class="title-h1 title-h1--grieen">100 тыс. р</h1>
+                            <p class="stock__descr">будет разыгрываться на&nbsp;старте ежедневно. Каждому пользователю будет
+                                приходить push-уведомление о&nbsp;начале розыгрыша. Сумма розыгрыша 
+                                будет увеличивается от&nbsp;роста числа платных пользователей, возможны
+                                призовые розыгрыши от&nbsp;спонсоров и&nbsp;партнеров проекта.</p>
+                        </li>
+                        <li class="stock__item">
+                            <h1 class="title-h1 title-h1--grieen">36,5 млн. р</h1>
+                            <p class="stock__descr">запланированный маркетинговый бюджет на&nbsp;первый год лотереи. Мы
+                                используем маркетинговый бюджет внутри сети, что даст максимально
+                                быстрый рост подписчиков.</p>
+                        </li>
+                        <li class="stock__item">
+                            <h1 class="title-h1 title-h1--grieen">до 100%</h1>
+                            <p class="stock__descr">может потратить участник на&nbsp;благотворительность в&nbsp;случае выигрыша.
+                                Это станет мощной поддержкой отрасли НКО. Ты&nbsp;можешь выбрать для себя
+                                проекты, которые хочешь поддержать выигранным рублем, либо вывести их
+                                на&nbsp;карту.</p>
+                        </li>
+                    </ul>
+                    <div class="stock__caption-block caption-block--none">
+                        <p class="stock__caption"><span>Доля выигрыша:</span><br>
+                            Амбассадор 100% на&nbsp;благотворительность.
+                            Деятель&nbsp;/ компания не&nbsp;менее 25%. Пользователь
+                            сам решает.
+                        </p>
+                        <p class="stock__caption">*Пример Китая, где муниципалитет Шэньчжэня и
+                            китайские банки подготовили к&nbsp;раздаче 4,5 млн
+                            цифровых юаней с&nbsp;целью поддержания экономики
+                            после локдауна.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stages" id="stg">
+            <div class="stages__container">
+                <div class="stages__title-block title-block">
+                    <h2 class="title">3 этапа развития</h2>
+                    <p class="caption-decor">Нашей сети</p>
+                </div>
+                <div class="stages__items">
+                    <div class="stages__item">
+                        <div class="stages__head-item stages__stage1">
+                            <h1 class="title-h1 title-h1--light">Этап 1</h1>
+                            <p class="stages__sub">10 тыс. пользователей</p>
+                        </div>
+                        <p class="stages__descr">на&nbsp;старте серия музыкальных мероприятий 
+                            с&nbsp;известными блогерами и&nbsp;опинион 
+                            лидерами молодежи при участии 
+                            амбассадоров для формирования состава 
+                            деятелей.
+                            Входом на&nbsp;мероприятие будет 
+                            регистрация в&nbsp;социальной сети.
+                            Создание комьюнити: блогеры, филиалы, 
+                            НКО.</p>
+                    </div>
+                    <div class="stages__item">
+                        <div class="stages__head-item stages__stage2">
+                            <h1 class="title-h1 title-h1--light">Этап 2</h1>
+                            <p class="stages__sub">100 тыс. пользователей</p>
+                        </div>
+                        <p class="stages__descr">привлечение дополнительных грантовых
+                            средств
+                            на&nbsp;продвижение и&nbsp;продакшн съемку
+                            короткометражных роликов социальной
+                            направленности. Использование агентств: PR,
+                            маркетинг. Продвижение в&nbsp;других социальных
+                            сетях. <span>Перевод пользователей на&nbsp;платформу
+                            блогерами и&nbsp;амбассадорами.</span></p>
+                    </div>
+                    <div class="stages__item">
+                        <div class="stages__head-item stages__stage3">
+                            <h1 class="title-h1 title-h1--light">Этап 3</h1>
+                            <p class="stages__sub">более 1 млн пользователей</p>
+                        </div>
+                        <p class="stages__descr">проведение и&nbsp;поддержка массовых
+                            и&nbsp;локальных спортивных мероприятий: 
+                            забег, полумарафон, дворовый футбол и&nbsp;т&nbsp;д. 
+                            Привлечение аудитории проектов НКО. 
+                            Поддержка масштабных музыкальных 
+                            мероприятий.
+                            Планируемый прирост за&nbsp;первый год более 
+                            1&nbsp;млн уникальных пользователей.</p>
+                    </div>
+                </div>
+                <div class="stages__action action">
+                    <h3 class="title-h3 title-h3--light">Нам нужны такие как ты!</h3>
+                    <button class="btn" name="btn">Присоединиться</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-tabs" id="tbs">
+            <div class="section-tabs__container">
+                <div class="section-tabs__title-block title-block">
+                    <h2 class="title">Подходит всем</h2>
+                    <p class="caption-decor">И тебе тоже</p>
+                </div>
+                <div class="section-tabs__main">
+                    <ul class="section-tabs__nav">
+                        <li class="section-tabs__btn" id="tab_btn">Амбасадору</li>
+                        <li class="section-tabs__btn" id="tab_btn">Деятелям / компании</li>
+                        <li class="section-tabs__btn" id="tab_btn">Добродел</li>
+                    </ul>
+                    <div class="section-tabs__content">
+                        <div class="section-tabs__slide" id="tab_slide">
+                            <div class="section-tabs__img section-tabs__img1"><img src="img/Am.jpg" alt="Амбассадор"></div>
+                            <div class="section-tabs__info">
+                                <h1 class="section-tabs__title title-h1">Амбассадор</h1>
+                                <p class="section-tabs__descr">Для него жизнь поле битвы, где трудности и&nbsp;вызовы требуют
+                                    энергичных действий ежедневно. Он&nbsp;готов привлечь внимание
+                                    к&nbsp;простым, но&nbsp;от&nbsp;этого
+                                    не&nbsp;менее значимым проблемам,
+                                    дает возможность быстрого роста как благотворительным
+                                    проектам, так и&nbsp;к&nbsp;привлечению внимания к&nbsp;исполнению
+                                    детской мечты, которая нуждается в&nbsp;финансовой поддержке.
+                                </p>
+                                <ul class="section-tabs__list">
+                                    <li class="section-tabs__item">Курирует и&nbsp;модерирует любые
+                                        благотворительные проекты.</li>
+                                    <li class="section-tabs__item">В подписках сразу все пользователи соцсети.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section-tabs__slide section-tabs__img2" id="tab_slide">
+                            <div class="section-tabs__img"><img src="img/Cm.jpg" alt="Амбассадор"></div>
+                            <div class="section-tabs__info">
+                                <h1 class="section-tabs__title title-h1">Деятель ⁄ компания</h1>
+                                <p class="section-tabs__descr">Стремится к&nbsp;поиску своего пути. Постоянно встречая новые
+                                    вызовы
+                                    он&nbsp;приобретает жизненный опыт и&nbsp;профессиональные
+                                    компетенции,
+                                    о&nbsp;которых рассказывает другими
+                                </p>
+                                <ul class="section-tabs__list">
+                                    <li class="section-tabs__item">Доступ к&nbsp;прямым эфирам, чтобы делиться
+                                        профессиональной экспертизой</li>
+                                    <li class="section-tabs__item">Получение дополнительных охватов и&nbsp;подписок</li>
+                                    <li class="section-tabs__item">Привлечение клиентов (лидогенерация)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section-tabs__slide" id="tab_slide">
+                            <div class="section-tabs__img section-tabs__img3"><img src="img/Bm.jpg" alt="Амбассадор"></div>
+                            <div class="section-tabs__info">
+                                <h1 class="section-tabs__title title-h1 section-tabs--big">Самый<br>
+                                    небезразличный и главный
+                                    человек на платформе</h1>
+                                <h1 class="section-tabs__title title-h1 section-tabs--small">Добродел</h1>
+                                <p class="section-tabs__descr section-tabs--big">Доверяя платформе, один раз оформив подписку, развивается
+                                    вместе с&nbsp;ней, привлекает внимание к&nbsp;проектам, получает и&nbsp;делится
+                                    компетенциями. Знает,
+                                    что каждый проект проверен фондом и
+                                    помощь дойдет адресату, а&nbsp;хронологию можно отследить. Может сам
+                                    создать проект, попросить помощи, заявить
+                                    о&nbsp;стартапе... Только от&nbsp;его
+                                    активности зависит популярность проекта.
+                                    Когда опыта не&nbsp;хватает
+                                    всегда можно воспользоваться помощью деятелей или советами
+                                    компанией продвижения. Находит друзей и&nbsp;создает новые комьюнити.
+                                </p>
+                                <p class="section-tabs__descr section-tabs--small">Доверяя платформе, один раз оформив подписку, развивается
+                                    вместе с&nbsp;ней, привлекает внимание к&nbsp;проектам, получает и&nbsp;делится
+                                    компетенциями. Знает,
+                                    что каждый проект проверен фондом и
+                                    помощь дойдет адресату, а&nbsp;хронологию можно отследить. Может сам
+                                    создать проект, попросить помощи, заявить
+                                    о&nbsp;стартапе...
+                                </p>
+                                <ul class="section-tabs__list section-tabs__flex">
+                                    <li class="section-tabs__item">Мессенджер для знакомства
+                                        и общения
+                                    </li>
+                                    <li class="section-tabs__item">Лента для постов и видео</li>
+                                    <li class="section-tabs__item">Возможность роста до
+                                        деятеля или амбассадора
+                                    </li>
+                                    <li class="section-tabs__item">Геймификация процесса</li>
+                                    <li class="section-tabs__item">Удобное приложение,
+                                        чтобы всегда быть онлайн
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-project" id="opj">
+            <div class="our-project__container">
+                <div class="our-project__title-block title-block">
+                    <h2 class="title">Наш проект</h2>
+                    <p class="caption-decor">Хорошая идея</p>
+                </div>
+                <div class="our-project__items">
+                    <div class="our-project__item">
+                        <img src="img/ill1.jpg" alt="Иллюстрация">
+                        <p class="our-project__descr">Уход с&nbsp;рынка фейсбук, инстаграм и
+                            огранич ения на&nbsp;монетизацию ютюб дали
+                            возможность для создания новой
+                            платформы.
+                        </p>
+                        <p class="our-project__descr">С&nbsp;каждым годом бизнес в&nbsp;России начинает
+                            уделять все больше внимания социальным
+                            проектам.
+                        </p>
+                        <p class="our-project__descr">Бизнес-тренеры для начинающих предприн
+                            имателей, указывают на&nbsp;стратегию
+                            &laquo;отдавать&raquo; создавая благоприятную среду
+                            для развития
+                        </p>
+                    </div>
+                    <div class="our-project__item">
+                        <img src="img/ill2.jpg" alt="Иллюстрация">
+                        <p class="our-project__descr">Добродел для поиска и&nbsp;привлечения денег и
+                            других ресурсов на&nbsp;социальные,
+                            образовательные, культурные проекты
+                            и&nbsp;в
+                            благотворительные фонды.
+                            По-русски говорят &laquo;сбор пожертвований&raquo;,
+                            но&nbsp;такая формулировка ассоциируется
+                            с
+                            просьбами, мольбой, &laquo;протянутой рукой&raquo;.
+                        </p>
+                        <p class="our-project__descr">Фандрайзинг&nbsp;же&nbsp;&mdash; это целая система
+                            отношений, полноценное партнерство, где
+                            обе стороны&nbsp;&mdash; тот, кто жертвует и&nbsp;тот, кому
+                            жертвуют&nbsp;&mdash; движутся к&nbsp;общей цели
+                        </p>
+                    </div>
+                    <div class="our-project__item">
+                        <img src="img/ill3.jpg" alt="Иллюстрация">
+                        <p class="our-project__descr">Добродел&nbsp;&mdash; социально- ориентированная
+                            рекламная площадка.
+                        </p>
+                        <ul class="our-project__list">
+                            <li class="our-project__list-item">Платформа для коммерческого
+                                продвижения миллионов самозанятых.
+                            </li>
+                            <li class="our-project__list-item">Создание национальной идеи</li>
+                            <li class="our-project__list-item">Популяризация благотворительности</li>
+                        </ul>
+                        <p class="our-project__descr">Интеграция в прямом эфире розыгрыша
+                            Доброруб даст охваты куда больше чем в
+                            популярном ютюб шоу или интеграции у
+                            блогера
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team" id="tm">
+            <div class="team__container">
+                <div class="team__title-block title-block">
+                    <h2 class="title title--light">Команда проекта</h2>
+                    <p class="caption-decor">Добродел</p>
+                </div>
+                <div class="team__slider">
+                    <div class="swiper team__items">
+                        <div class="team__place"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="team__item">
+                                    <img src="img/u1.png" alt="Участник команды" class="team__img">
+                                    <h3 class="title-h3 title-h3--light">Сергей Евграфьев</h3>
+                                    <div class="team__telegram team__telegram--green">
+                                        <p class="team__telegram-name">@welltryagain</p>
+                                    </div>
+                                    <p class="team__caption">менеджер проектов</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="team__item">
+                                    <img src="img/u2.png" alt="Участник команды" class="team__img">
+                                    <h3 class="title-h3 title-h3--light">Екатерина Цигельникова</h3>
+                                    <div class="team__telegram team__telegram--pink">
+                                        <p class="team__telegram-name">@Ekaterina_Tssss</p>
+                                    </div>
+                                    <p class="team__caption">Маркетолог</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="team__item">
+                                    <img src="img/u3.png" alt="Участник команды" class="team__img">
+                                    <h3 class="title-h3 title-h3--light">Бахтынов Алексей</h3>
+                                    <div class="team__telegram team__telegram--green">
+                                        <p class="team__telegram-name">@alexey_bah</p>
+                                    </div>
+                                    <p class="team__caption">креативный директор</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="team__item">
+                                    <img src="img/u4.png" alt="Участник команды" class="team__img">
+                                    <h3 class="title-h3 title-h3--light">Елизавета Ялитова</h3>
+                                    <div class="team__telegram team__telegram--pink">
+                                        <p class="team__telegram-name">@lizabufu</p>
+                                    </div>
+                                    <p class="team__caption">художник-дизайнер</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="team__item">
+                                    <img src="img/u5.png" alt="Участник команды" class="team__img">
+                                    <h3 class="title-h3 title-h3--light">Юлия Гоголева</h3>
+                                    <div class="team__telegram team__telegram--pink">
+                                        <p class="team__telegram-name">@UliaGogoleva</p>
+                                    </div>
+                                    <p class="team__caption">разработчик</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="team__item">
+                                    <img src="img/u6.png" alt="Участник команды" class="team__img">
+                                    <h3 class="title-h3 title-h3--light">Денис Ястребов</h3>
+                                    <div class="team__telegram team__telegram--green">
+                                        <p class="team__telegram-name">@yastrebbov</p>
+                                    </div>
+                                    <p class="team__caption">frontend разработчик</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-nav team__slider-nav">
+                        <button class="slider-nav__btn team__prev slider-btn">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#left"></use>
+                            </svg>
+                        </button>
+                        <button class="slider-nav__btn team__next slider-btn">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="together">
+            <div class="together__container">
+                <div class="together__header">
+                    <div class="together__title-block">
+                        <h2 class="title title--light">Вместе</h2>
+                        <img src="img/title-descr.svg" alt="Подзаголовок">
+                    </div>
+                </div>
+                <div class="together__items">
+                    <div class="together__item">
+                        <p class="together__number">1</p>
+                        <p class="together__descr">Возможность
+                            для создания и&nbsp;развития
+                            социальных проектов.</p>
+                    </div>
+                    <div class="together__item">
+                        <p class="together__number">2</p>
+                        <p class="together__descr">Продвижение своего продукта
+                            или услуги через привлечение
+                            внимания и&nbsp;участия
+                            в&nbsp;благотворительных проектах.</p>
+                    </div>
+                    <div class="together__item">
+                        <p class="together__number">3</p>
+                        <p class="together__descr">Создание экосистемы, которая
+                            объединяет
+                            и&nbsp;поддерживает
+                            в&nbsp;балансе благотворительные
+                            проекты с&nbsp;участием государства,
+                            бизнеса и&nbsp;простых людей.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts" id="cts">
+            <div class="contacts__container">
+                <div class="contacts__title-block title-block">
+                    <h2 class="title">Остаёмся на связи</h2>
+                    <p class="caption-decor">Звоните</p>
+                </div>
+                <div class="contacts__info">
+                    <h3 class="title-h3">Для НКО</h3>
+                    <p class="contacts__descr">Оставить заявку можно по ссылке <a href="https://form.google.com/document" class="contacts__link">https://form.google.com/document</a></p>
+                    <img src="img/arrow.svg" alt="Стрелка" class="contacts__img">
+                    <p class="contacts__descr contacts__descr-qr">или отсканировать <span>QR-code</span></p>
+                    <img src="img/qr.png" alt="qr code" class="contacts__qr">
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__section section-top">
+                    <a href="index.html" class="section-top__logo"><img src="img/Logo-light.svg" alt="logo"></a>
+                    <nav class="nav section-top__nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#" class="nav__link nav__link--light">Сотрудничество</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link nav__link--light">Инвесторам</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link nav__link--light">Вам нужна помощь?</a></li>
+                        </ul>
+                    </nav>
+                    <button class="btn" name="btn">Регистрация</button>
+                </div>
+                <nav class="section-nav">
+                    <ul class="section-nav__list">
+                        <li class="section-nav__item"><a href="#" class="nav__link nav__link--light">Сотрудничество</a></li>
+                        <li class="section-nav__item"><a href="#" class="nav__link nav__link--light">Инвесторам</a></li>
+                        <li class="section-nav__item"><a href="#" class="nav__link nav__link--light">Вам нужна помощь?</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__section section-center">
+                    <ul class="section-center__list">
+                        <li class="section-center__item">
+                            <p class="section-center__title footer__title">ООО«Добродел»</p>
+                            <div class="section-center__descr-block">
+                                <p class="section-center__descr">ИНН 7707468607</p>
+                                <p class="section-center__descr">КПП 770701001</p>
+                            </div>
+                        </li>
+                        <li class="section-center__item">
+                            <p class="section-center__title footer__title">Адрес</p>
+                            <p class="section-center__descr">127055, Москва, 1-й Тихвинский туп.,
+                                д. 5-7, помещение&nbsp;1П, комн.&nbsp;5, офис&nbsp;4а</p>
+                        </li>
+                        <li class="section-center__item">
+                            <p class="section-center__title footer__title">Web</p>
+                            <div class="section-center__descr-block">
+                                <p class="section-center__descr">добродел.рус</p>
+                                <p class="section-center__descr">dobrodelmsk@gmail.com</p>
+                            </div>
+                        </li>
+                        <li class="section-center__item">
+                            <p class="section-center__title footer__title">Телефон</p>
+                            <p class="section-center__descr section-center__mb">+7-922-001-10-01 – взаимодействие с НКО</p>
+                            <p class="section-center__descr">+7-982-909-45-10 – руководитель коммерческого отдела</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__section section-bottom">
+                    <p class="section-bottom__copyright">© Все права защищены. Добродел 2022 год.</p>
+                    <img src="img/eye.svg" alt="logo eye" class="section-bottom__eye">
+                    <div class="section-bottom__social">
+                        <a href="#" class="section-bottom__link"><img src="img/facebook.svg" alt="facebook"></a>
+                        <a href="#" class="section-bottom__link"><img src="img/instagram.svg" alt="instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/sliders.js"></script>
+        <script src="js/tabs.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
