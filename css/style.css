@@ -2306,7 +2306,7 @@ body {
 
   .help__container::after {
     top: 100px;
-    right: 250px;
+    right: -12px;
   }
 
   .help__slider {
