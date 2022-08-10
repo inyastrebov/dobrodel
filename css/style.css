@@ -126,7 +126,7 @@ h6 {
 }
 
 @font-face {
-  font-family: Value Sans Pro Medium;
+  font-family: ValueSansPro sans-serif;
   font-display: swap;
   src: url("../fonts/Value Sans Pro Medium.woff2") format("woff2");
   font-weight: 400;
@@ -134,7 +134,7 @@ h6 {
 }
 
 @font-face {
-  font-family: Value Sans Pro Regular;
+  font-family: ValueSansPro sans-serif;
   font-display: swap;
   src: url("../fonts/Value Sans Pro Regular.woff2") format("woff2");
   font-weight: 400;
@@ -142,7 +142,7 @@ h6 {
 }
 
 @font-face {
-  font-family: Value Sans Pro Bold;
+  font-family: ValueSansPro sans-serif;
   font-display: swap;
   src: url("../fonts/Value Sans Pro Bold.woff2") format("woff2");
   font-weight: 400;
